@@ -23,6 +23,8 @@ namespace pz_2_Ridnaya_PR_24._101.Tasks
         public Window1()
         {
             InitializeComponent();
+
+            MessageBox.Show("Этого окна раньше не было!", "Новое уведомление");
         }
         private void tbInput_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {

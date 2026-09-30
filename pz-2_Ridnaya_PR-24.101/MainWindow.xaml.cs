@@ -24,6 +24,9 @@ namespace pz_2_Ridnaya_PR_24._101
         public MainWindow()
         {
             InitializeComponent();
+
+            
+            changes.Content = "Этот текст это новые изменения";
         }
 
         private void OpenWindow(object sender, RoutedEventArgs e)
