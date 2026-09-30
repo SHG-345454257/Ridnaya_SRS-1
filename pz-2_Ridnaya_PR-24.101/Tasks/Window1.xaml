@@ -1,0 +1,20 @@
+﻿<Window x:Class="pz_2_Ridnaya_PR_24._101.Tasks.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz_2_Ridnaya_PR_24._101.Tasks"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="LabelHeading" Content="Текст задачи" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LabelTask" Content="Вывести на экран число 2n!, n меньше или равно 100, n - натуральное." HorizontalAlignment="Left" Margin="147,52,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelIn" Content="Введите число:" HorizontalAlignment="Left" Margin="207,168,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelOut" Content="Двойной факториал этого числа:" HorizontalAlignment="Left" Margin="75,246,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="tbInput" HorizontalAlignment="Left" Margin="353,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" PreviewTextInput="tbInput_PreviewTextInput"/>
+        <TextBox x:Name="tbOutput" HorizontalAlignment="Left" Margin="353,254,0,0" TextWrapping="Wrap" Text="Результат" IsReadOnly="True" 
+         Focusable="False" VerticalAlignment="Top" Width="390" FontSize="16" Height="79"/>
+        <Button x:Name="btnCalculate" Content="Рассчитать" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Click="CalculateButton_Click" FontSize="16" Height="30" Width="102"/>
+
+    </Grid>
+</Window>

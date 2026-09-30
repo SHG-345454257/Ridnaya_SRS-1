@@ -1,0 +1,28 @@
+﻿<Window x:Class="pz_2_Ridnaya_PR_24._101.Tasks.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz_2_Ridnaya_PR_24._101.Tasks"
+        mc:Ignorable="d"
+        Title="Window5" Height="464" Width="1376">
+    <Grid>
+        <Label x:Name="LabelHeading" Content="Текст задачи" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="LabelIn" Content="Введите число 1:" HorizontalAlignment="Left" Margin="8,101,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="LabelOut" Content="Минимальное:" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" FontSize="16" Height="41" Width="129"/>
+        <TextBox x:Name="tbInput1" HorizontalAlignment="Left" Margin="146,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" FontSize="16" Height="42" PreviewTextInput="tbInput_PreviewTextInput"/>
+        <TextBox x:Name="tbMin" HorizontalAlignment="Left" Margin="144,229,0,0" TextWrapping="Wrap" Text="Результат 1" IsReadOnly="True" 
+            Focusable="False" VerticalAlignment="Top" Width="104" FontSize="16" Height="41"/>
+        <Button x:Name="btnCalculate" Content="Рассчитать" HorizontalAlignment="Left" Margin="75,387,0,0" VerticalAlignment="Top" Click="CalculateButton_Click" FontSize="16" Height="30" Width="102"/>
+        <TextBlock x:Name="Task" HorizontalAlignment="Center" Margin="0,43,0,0" TextWrapping="Wrap" Text="Сгенерировать массив размером M столбцов и N строк, содержащий числа от -10 до 10. Отобразить его пользователю. Отсортировать элементы в нем по возрастанию и по убыванию. Вывести результаты сортировки в двух таблицах. Найти максимальный и минимальный элементы массива. " VerticalAlignment="Top" Height="48" Width="1252" FontSize="14"/>
+        <Label x:Name="LabelIn_Копировать" Content="Введите число 2:" HorizontalAlignment="Left" Margin="8,163,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="tbInput2" HorizontalAlignment="Left" Margin="146,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" FontSize="16" Height="42" PreviewTextInput="tbInput_PreviewTextInput"/>
+        <Label x:Name="LabelOut_Копировать" Content="Максимальное:" HorizontalAlignment="Left" Margin="10,297,0,0" VerticalAlignment="Top" FontSize="16" Height="41" Width="129"/>
+        <TextBox x:Name="tbMax" HorizontalAlignment="Left" Margin="144,297,0,0" TextWrapping="Wrap" Text="Результат 2" IsReadOnly="True" 
+            Focusable="False" VerticalAlignment="Top" Width="104" FontSize="16" Height="41"/>
+        <DataGrid x:Name="dgOriginal" AutoGenerateColumns="True" HeadersVisibility="None" Margin="272,96,771,31" FontSize="16"/>
+        <DataGrid x:Name="dgAscending" AutoGenerateColumns="True" HeadersVisibility="None" Margin="643,96,400,31" FontSize="16"/>
+        <DataGrid x:Name="dgDescending" AutoGenerateColumns="True" HeadersVisibility="None" Margin="1007,96,36,31" FontSize="16"/>
+
+    </Grid>
+</Window>
